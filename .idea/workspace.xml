@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8779cd31-46c9-402b-9017-5e0cc65c17fc" name="Changes" comment="Refactored to introduce TodoList and TodoItem entities">
       <change afterPath="$PROJECT_DIR$/src/app/CommandLineMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todo_list/TodoItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/todo_list/TodoList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/todo_list/TodoListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todo_list/TodoListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/todo_list/TodoListPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_list_1_class.iml" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list_1_class.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +78,20 @@
       <recent name="todo_list" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TodoListTest">
+  <component name="RunManager" selected="Application.CommandLineMain">
+    <configuration name="CommandLineMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.CommandLineMain" />
+      <module name="todo_list_1_class" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="todo_list_1_class" />
@@ -114,6 +122,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CommandLineMain" />
         <item itemvalue="JUnit.TodoListTest" />
       </list>
     </recent_temporary>
@@ -128,8 +137,17 @@
       <updated>1753110355710</updated>
       <workItem from="1755723746233" duration="225000" />
       <workItem from="1755723991507" duration="2753000" />
-      <workItem from="1755726935801" duration="5435000" />
+      <workItem from="1755726935801" duration="6104000" />
     </task>
+    <task id="LOCAL-00001" summary="Refactored to introduce TodoList and TodoItem entities">
+      <option name="closed" value="true" />
+      <created>1755790171370</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1755790171370</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
