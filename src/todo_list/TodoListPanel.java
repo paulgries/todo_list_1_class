@@ -10,7 +10,7 @@ public class TodoListPanel extends JPanel implements ActionListener {
     private final JTextField textField;
     private final DefaultListModel<String> textModel;
 
-    private TodoList todoList = new TodoList();
+    private final TodoList todoList = new TodoList();
 
     public TodoListPanel() {
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
