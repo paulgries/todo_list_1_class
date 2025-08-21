@@ -4,11 +4,14 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.util.Arrays;
 
 public class TodoListPanel extends JPanel implements ActionListener {
     public static final String DONE = " (done)";
     private final JTextField textField;
     private final DefaultListModel<String> textModel;
+
+    private TodoList todoList = new TodoList();
 
     public TodoListPanel() {
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
@@ -21,16 +24,13 @@ public class TodoListPanel extends JPanel implements ActionListener {
         JScrollPane scrollPane = new JScrollPane(textList);
 
         ListSelectionModel listSelectionModel = textList.getSelectionModel();
-        listSelectionModel.setSelectionMode(
-                ListSelectionModel.SINGLE_SELECTION);
-        listSelectionModel.addListSelectionListener(e ->
-                selectItem(textList));
+        listSelectionModel.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        listSelectionModel.addListSelectionListener(e -> selectItem(textList));
 
         textList.addKeyListener(new java.awt.event.KeyAdapter() {
             @Override
             public void keyPressed(KeyEvent evt) {
-                if (evt.getKeyCode() == KeyEvent.VK_DELETE
-                        || evt.getKeyCode() == KeyEvent.VK_BACK_SPACE) {
+                if (evt.getKeyCode() == KeyEvent.VK_DELETE || evt.getKeyCode() == KeyEvent.VK_BACK_SPACE) {
                     deleteItem(textList);
                 } else if (evt.getKeyCode() == KeyEvent.VK_SPACE) {
                     toggleDone(textList);
@@ -45,20 +45,18 @@ public class TodoListPanel extends JPanel implements ActionListener {
     private void toggleDone(JList<String> textList) {
         int selectedIndex = textList.getSelectedIndex();
         if (selectedIndex != -1) {
-            String selectedText = textModel.getElementAt(selectedIndex);
-            if (selectedText.endsWith(DONE)) {
-                selectedText = selectedText.substring(0, selectedText.length() - DONE.length());
-            } else {
-                selectedText = selectedText + DONE;
-            }
-            textModel.setElementAt(selectedText, selectedIndex);
+            todoList.toggleTodo(selectedIndex);
+            updateTodoModel();
+            ListSelectionModel listSelectionModel = textList.getSelectionModel();
+            listSelectionModel.setSelectionInterval(selectedIndex, selectedIndex);
         }
     }
 
     private void deleteItem(JList<String> textList) {
         int selectedIndex = textList.getSelectedIndex();
         if (selectedIndex != -1) {
-            textModel.remove(selectedIndex);
+            todoList.removeTodo(selectedIndex);
+            updateTodoModel();
         }
     }
 
@@ -72,8 +70,16 @@ public class TodoListPanel extends JPanel implements ActionListener {
 
     public void actionPerformed(ActionEvent evt) {
         String text = textField.getText();
-        textModel.addElement(text);
+        todoList.addTodo(text);
+        updateTodoModel();
         textField.selectAll();
+    }
+
+    private void updateTodoModel() {
+        textModel.clear();
+        textModel.addAll(Arrays.stream(todoList.getTodos())
+                .map(todo -> todo.toString() + (todo.getStatus() ? DONE : ""))
+                .toList());
     }
 
 }
