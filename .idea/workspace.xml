@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8779cd31-46c9-402b-9017-5e0cc65c17fc" name="Changes" comment="Refactored to introduce TodoList and TodoItem entities">
-      <change afterPath="$PROJECT_DIR$/src/app/CommandLineMain.java" afterDir="false" />
+    <list default="true" id="8779cd31-46c9-402b-9017-5e0cc65c17fc" name="Changes" comment="Added command line while loop version">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todo_list/TodoListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/todo_list/TodoListPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +60,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -78,7 +79,7 @@
       <recent name="todo_list" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CommandLineMain">
+  <component name="RunManager" selected="JUnit.TodoListTest">
     <configuration name="CommandLineMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.CommandLineMain" />
       <module name="todo_list_1_class" />
@@ -122,8 +123,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CommandLineMain" />
         <item itemvalue="JUnit.TodoListTest" />
+        <item itemvalue="Application.CommandLineMain" />
       </list>
     </recent_temporary>
   </component>
@@ -137,7 +138,7 @@
       <updated>1753110355710</updated>
       <workItem from="1755723746233" duration="225000" />
       <workItem from="1755723991507" duration="2753000" />
-      <workItem from="1755726935801" duration="6104000" />
+      <workItem from="1755726935801" duration="6335000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored to introduce TodoList and TodoItem entities">
       <option name="closed" value="true" />
@@ -147,7 +148,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755790171370</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added command line while loop version">
+      <option name="closed" value="true" />
+      <created>1755790944543</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1755790944543</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,14 +176,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added code for delete and (done) marking" />
     <MESSAGE value="Refactored to introduce TodoList and TodoItem entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored to introduce TodoList and TodoItem entities" />
+    <MESSAGE value="Added command line while loop version" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added command line while loop version" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/todo_list/TodoListPanel.java</url>
-          <line>63</line>
+          <line>62</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

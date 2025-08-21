@@ -7,7 +7,6 @@ import java.awt.event.KeyEvent;
 import java.util.Arrays;
 
 public class TodoListPanel extends JPanel implements ActionListener {
-    public static final String DONE = " (done)";
     private final JTextField textField;
     private final DefaultListModel<String> textModel;
 
@@ -78,7 +77,7 @@ public class TodoListPanel extends JPanel implements ActionListener {
     private void updateTodoModel() {
         textModel.clear();
         textModel.addAll(Arrays.stream(todoList.getTodos())
-                .map(todo -> todo.toString() + (todo.getStatus() ? DONE : ""))
+                .map(todo -> todo.toString() + (todo.getStatus() ? TodoItem.DONE : ""))
                 .toList());
     }
 
