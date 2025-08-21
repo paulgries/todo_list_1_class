@@ -14,23 +14,31 @@ public class CommandLineMain {
             String command = scanner.nextLine().trim().toLowerCase();
             if (command.equals("exit")) {
                 break;
-            } else if (command.equals("add")) {
+            }
+
+            handleCommand(command, scanner, todoList);
+        }
+    }
+
+    private static void handleCommand(String command, Scanner scanner, TodoList todoList) {
+        switch (command) {
+            case "add" -> {
                 System.out.print("Enter todo item: ");
                 String todoItem = scanner.nextLine();
                 addTodo(todoItem, todoList);
-            } else if (command.equals("remove")) {
+            }
+            case "remove" -> {
                 System.out.print("Enter index to remove: ");
                 int index = Integer.parseInt(scanner.nextLine());
                 removeTodo(index, todoList);
-            } else if (command.equals("toggle")) {
+            }
+            case "toggle" -> {
                 System.out.print("Enter index to toggle: ");
                 int index = Integer.parseInt(scanner.nextLine());
                 toggleTodo(index, todoList);
-            } else if (command.equals("list")) {
-                listTodos(todoList);
-            } else {
-                System.out.println("Unknown command.");
             }
+            case "list" -> listTodos(todoList);
+            default -> System.out.println("Unknown command.");
         }
     }
 
@@ -51,7 +59,6 @@ public class CommandLineMain {
 
     private static void removeTodo(int index, TodoList todoList) {
         if (index >= 0 && index < todoList.size()) {
-            TodoItem removedItem = todoList.getTodo(index);
             todoList.removeTodo(index);
         } else {
             System.out.println("Invalid index.");

@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8779cd31-46c9-402b-9017-5e0cc65c17fc" name="Changes" comment="Fixed minor bug">
-      <change beforePath="$PROJECT_DIR$/src/todo_list/TodoListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/todo_list/TodoListPanel.java" afterDir="false" />
+    <list default="true" id="8779cd31-46c9-402b-9017-5e0cc65c17fc" name="Changes" comment="Made TodoList final">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/CommandLineMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/CommandLineMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +138,7 @@
       <updated>1753110355710</updated>
       <workItem from="1755723746233" duration="225000" />
       <workItem from="1755723991507" duration="2753000" />
-      <workItem from="1755726935801" duration="6393000" />
+      <workItem from="1755726935801" duration="7334000" />
     </task>
     <task id="LOCAL-00001" summary="Refactored to introduce TodoList and TodoItem entities">
       <option name="closed" value="true" />
@@ -163,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755791074324</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Made TodoList final">
+      <option name="closed" value="true" />
+      <created>1755791095515</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755791095515</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,17 +194,7 @@
     <MESSAGE value="Refactored to introduce TodoList and TodoItem entities" />
     <MESSAGE value="Added command line while loop version" />
     <MESSAGE value="Fixed minor bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed minor bug" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/todo_list/TodoListPanel.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Made TodoList final" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made TodoList final" />
   </component>
 </project>
