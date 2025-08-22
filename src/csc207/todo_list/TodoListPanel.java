@@ -102,7 +102,6 @@ public class TodoListPanel extends JPanel implements ActionListener {
     }
 
     private void save() {
-        System.out.println("Saving items:");
         JSONArray jsonArray = new JSONArray();
 
         for (int i = 0; i < textModel.size(); i++) {
@@ -113,7 +112,6 @@ public class TodoListPanel extends JPanel implements ActionListener {
             jsonArray.put(jsonObject);
         }
 
-        // Here you would typically write jsonArray to a file or database
         try {
             FileWriter fileWriter = new FileWriter(RESOURCES_TODO_LIST_JSON);
             String json = jsonArray.toString();
