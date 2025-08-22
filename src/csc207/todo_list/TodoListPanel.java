@@ -22,7 +22,6 @@ public class TodoListPanel extends JPanel implements ActionListener {
     public TodoListPanel() {
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
-
         textField = new JTextField(20);
         textField.addActionListener(this); // JTextFields fire an ActionEvent when the user types Enter
 

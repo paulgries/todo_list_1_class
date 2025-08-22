@@ -7,11 +7,8 @@
     <list default="true" id="8779cd31-46c9-402b-9017-5e0cc65c17fc" name="Changes" comment="Cleaned up a bit">
       <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csc207/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/todo_list/TodoListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csc207/todo_list/TodoListPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/csc207/todo_list/TodoListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csc207/todo_list/TodoListPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/todo_list_1_class.iml" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list_1_class.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +48,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.12106538",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -81,6 +78,15 @@
       <workItem from="1755723746233" duration="225000" />
       <workItem from="1755723991507" duration="2753000" />
     </task>
+    <task id="LOCAL-00001" summary="Cleaned up a bit">
+      <option name="closed" value="true" />
+      <created>1755804835264</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1755804835264</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,16 +96,5 @@
     <MESSAGE value="Added code for delete and (done) marking" />
     <MESSAGE value="Cleaned up a bit" />
     <option name="LAST_COMMIT_MESSAGE" value="Cleaned up a bit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/csc207/todo_list/TodoListPanel.java</url>
-          <line>117</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
