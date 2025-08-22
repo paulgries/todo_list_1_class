@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8779cd31-46c9-402b-9017-5e0cc65c17fc" name="Changes" comment="Cleaned up a bit">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="8779cd31-46c9-402b-9017-5e0cc65c17fc" name="Changes" comment="Removed duplicate method calls">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/csc207/todo_list/TodoListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csc207/todo_list/TodoListPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todo_list_1_class.iml" beforeDir="false" afterPath="$PROJECT_DIR$/todo_list_1_class.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +42,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.12106538",
@@ -77,6 +75,7 @@
       <updated>1753110355710</updated>
       <workItem from="1755723746233" duration="225000" />
       <workItem from="1755723991507" duration="2753000" />
+      <workItem from="1755872133788" duration="348000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up a bit">
       <option name="closed" value="true" />
@@ -92,9 +91,21 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added code for delete and (done) marking" />
     <MESSAGE value="Cleaned up a bit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up a bit" />
+    <MESSAGE value="Removed duplicate method calls" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed duplicate method calls" />
   </component>
 </project>

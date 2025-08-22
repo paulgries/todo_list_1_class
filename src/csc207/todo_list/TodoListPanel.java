@@ -10,6 +10,7 @@ import java.awt.event.KeyEvent;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class TodoListPanel extends JPanel implements ActionListener {
@@ -69,18 +70,20 @@ public class TodoListPanel extends JPanel implements ActionListener {
     }
 
     private static void ensureJsonExists() {
-        if (!Files.exists(Paths.get(RESOURCES))) {
+        Path resourcesDir = Paths.get(RESOURCES);
+        if (!Files.exists(resourcesDir)) {
             try {
-                Files.createDirectories(Paths.get(RESOURCES));
+                Files.createDirectories(resourcesDir);
             } catch (IOException e) {
                 throw new RuntimeException("Failed to create resources directory", e);
             }
         }
 
-        if (!Files.exists(Paths.get(RESOURCES_TODO_LIST_JSON))) {
+        Path resourcesJsonFile = Paths.get(RESOURCES_TODO_LIST_JSON);
+        if (!Files.exists(resourcesJsonFile)) {
             try {
-                Files.createFile(Paths.get(RESOURCES_TODO_LIST_JSON));
-                Files.write(Paths.get(RESOURCES_TODO_LIST_JSON), "[]".getBytes());
+                Files.createFile(resourcesJsonFile);
+                Files.write(resourcesJsonFile, "[]".getBytes());
             } catch (IOException e) {
                 throw new RuntimeException("Failed to create todo_list.json file", e);
             }
