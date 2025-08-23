@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="todo_list_1_class" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="todo_list_1_class" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
