@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8779cd31-46c9-402b-9017-5e0cc65c17fc" name="Changes" comment="Removed duplicate method calls">
+    <list default="true" id="8779cd31-46c9-402b-9017-5e0cc65c17fc" name="Changes" comment="Removed unnecessary comment and print statement">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/csc207/todo_list/TodoListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/csc207/todo_list/TodoListPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +16,11 @@
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -36,7 +40,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "activity1",
     "jdk.selected.JAVA_MODULE": "corretto-17",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -75,7 +79,7 @@
       <updated>1753110355710</updated>
       <workItem from="1755723746233" duration="225000" />
       <workItem from="1755723991507" duration="2753000" />
-      <workItem from="1755872133788" duration="431000" />
+      <workItem from="1755872133788" duration="4168000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up a bit">
       <option name="closed" value="true" />
@@ -93,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755872492647</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Removed unnecessary comment and print statement">
+      <option name="closed" value="true" />
+      <created>1755872599022</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1755872599022</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +126,7 @@
     <MESSAGE value="Added code for delete and (done) marking" />
     <MESSAGE value="Cleaned up a bit" />
     <MESSAGE value="Removed duplicate method calls" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed duplicate method calls" />
+    <MESSAGE value="Removed unnecessary comment and print statement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary comment and print statement" />
   </component>
 </project>
