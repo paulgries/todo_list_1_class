@@ -30,8 +30,8 @@ bin/
 
 ### IntelliJ ###
 *.xml
-.idea
+.idea/
 
 ### Resources and target ###
-resources
-target
+resources/
+target/
